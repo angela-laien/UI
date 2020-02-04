@@ -1,0 +1,97 @@
+body {
+  background-color: @cool-blue;
+}
+
+header {
+  background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url(../img/listen.jpg);
+  height: 100%;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+  
+  h1 {
+    color: @title-font;
+    font-size: 8rem;
+    padding: 10% 10% 8% 10%;
+  }
+  
+  h2 {
+    padding: 0% 8% 6% 73%;
+  }
+  
+  h3 {
+    padding: 0% 8% 5% 10%;
+  }
+  
+  .btn {
+    .custom-btn(@btn-bg-color: @plush-pink, @width: 250px, @font-color: @whammy-white);
+  }
+
+  padding: 0% 0% 15% 0%;
+}
+
+.home {
+  .top-info {
+    h4 {
+      font-size: 2.5rem;
+      padding: 7% 0%;
+    }
+
+    p {
+     font-size: 1.8rem;
+     padding: 0% 20% 5% 20%;
+    }
+    
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 5% 5% 1% 5%; 
+
+    .enjoy-text {
+      height: 500px;
+      width: 50%;
+      border: 3px solid @whammy-white;
+      margin-right: 1%;
+    }
+
+    .find-text {
+      height: 500px;
+      width: 50%;
+      border: 3px solid @whammy-white;
+      margin-left: 1%;
+    }
+  }
+
+  .bottom-info {
+    
+    h4 {
+      font-size: 2.5rem;
+      padding: 7% 0%;
+    }
+
+    p {
+      font-size: 1.8rem;
+      padding: 0% 20% 5% 20%;
+    }
+
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    padding: 1% 5% 5% 5%;
+
+    .see-text {
+      height: 500px;
+      width: 50%;
+      border: 3px solid @whammy-white;
+      margin-right: 1%;
+    }
+
+    .share-text {
+      height: 500px;
+      width: 50%;
+      border: 3px solid @whammy-white;
+      margin-left: 1%;
+    }
+  }
+}

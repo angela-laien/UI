@@ -1,0 +1,35 @@
+// Mixins Here
+
+.custom-btn(@btn-bg-color: @plush-pink, @width:100px, @font-color: @whammy-white){
+    display: block;
+    background-color: @btn-bg-color;
+    transition: 1.0s;
+    background: linear-gradient(to right, @plush-pink 50%, @popstar-purple 100%);
+    box-shadow: 0 0 20px #eee;
+    margin: 60px 0px 0px 600px;
+    cursor: pointer;
+    width: @width;
+    height: 60px;
+    font-weight: bold;
+    font-size: 1.8rem;
+    border-radius: 30px;
+    color: @font-color;
+    padding-top: 1.5%;
+    padding-left: 4.5%;
+    &:hover{
+        background: linear-gradient(to right, @popstar-purple 50%, @plush-pink 100%);
+    }
+}
+
+.image-flex() {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+}
+
+.center(@direction, @justify, @align) {
+    display: flex;
+    flex-direction: @direction;
+    justify-content: @justify;
+    align-items: @align;
+}
